@@ -1,0 +1,125 @@
+.header {
+    background-color: #0d4eb0;
+    padding: 4rem;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header__meta,
+.header__nav,
+.header__categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__meta,
+.header__categories {
+    border-bottom: 1px solid rgba(255 255 255/ .35);
+    padding-bottom: 2rem;
+}
+
+.header__meta--form,
+.header__meta--form fieldset,
+.header__meta--links,
+.header__nav--links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+select,
+input[type='submit'] {
+    color: white;
+    border: none;
+    background-color: #1362df;
+    padding: 0.7rem 2rem;
+}
+
+a {
+    color: white;
+    font-weight: 700;
+    padding: 0;
+}
+
+.header__categories > div {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.header__categories > div:first-child {
+    gap: 2rem;
+}
+
+.header__categories--logo {
+    padding: 0;
+}
+
+.header__categories > div:first-child {
+    flex-grow: 1;
+}
+
+.header__categories--form {
+    flex-grow: 1;
+}
+
+.header__categories--form input[type='search'] {
+    width: 35%;
+    background-color: white;
+    padding: .7rem 2rem;
+}
+
+.header__categories--favourites,
+.header__categories--login {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.header__categories--favourites a,
+.header__categories--login a {
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.header__categories--favourites > div:last-child,
+.header__categories--login > div:last-child {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+.header__categories--favourites > div:first-child,
+.header__categories--login > div:first-child {
+    position: relative;
+
+}
+
+.header__categories--favourites > div:first-child span,
+.header__categories--login > div:first-child span {
+    position: absolute;
+    top: -2rem;
+    right: -0.5rem;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    background-color: white;
+    color: #0d4eb0;
+    border-radius: 50%;
+}
+
+.header__categories--favourites > div:first-child i,
+.header__categories--login > div:first-child i,
+.header__nav--help i {
+    font-size: 2.5rem;
+}
+
+.header__nav--help p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
