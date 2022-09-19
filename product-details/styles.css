@@ -1,0 +1,140 @@
+.product {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+    padding: 4rem;
+}
+
+.product__imgs {
+    flex-basis: 40%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product__imgs--display {
+    height: 45%;
+}
+
+.product__imgs--others {
+    height: 30rem;
+    width: 100%;
+}
+
+.product__imgs--others img {
+    object-position: center 15%;
+}
+
+img {
+    border-radius: 1rem;
+}
+
+.product__imgs > div {
+    display: flex;
+    gap: 2rem;
+}
+
+.product__details {
+    flex-basis: 30%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.product__details--rating {
+    display: flex;
+    gap: 2rem;
+}
+
+.product__details--rating i {
+    color: orange;
+}
+
+.product__details > div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__details--quantity,
+.product__details--price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.product__details--quantity p {
+    padding: 1rem 2rem;
+    border: 1px solid lightgray;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    font-size: 2rem;
+}
+
+.product__details--cart {
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+.product__details--container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product__details--container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.product__details--size,
+.product__details--color {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product__details--size ul,
+.product__details--color ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.product__details--size ul li {
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+    padding: 1rem 2rem;
+}
+
+.product__details--color ul li {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+}
+
+.product__details--color ul li:first-child {
+    background-color: rgb(171, 200, 216);
+}
+
+.product__details--color ul li:nth-child(2) {
+    background-color: rgb(80, 80, 142);
+}
+
+.product__details--color ul li:nth-child(3) {
+    background-color: rgb(66, 146, 243);
+}
+
+.product__details--color ul li:nth-child(4) {
+    background-color: rgb(198, 161, 228);
+}

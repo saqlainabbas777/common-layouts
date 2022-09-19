@@ -13,6 +13,103 @@
     <title>Product Details</title>
 </head>
 <body>
+<main class="product">
+    <section class="product__imgs">
+        <figure class="product__imgs--display">
+            <img loading="lazy" src="../images/8.1.jpg" alt="Shirt" />
+        </figure>
 
+        <!-- div>figure*3.product__imgs--others>img[alt="Shirt"][loading="lazy"][src="images/8.$@2.jpg"] -->
+
+        <div>
+            <figure class="product__imgs--others">
+                <img src="../images/8.2.jpg" alt="Shirt" loading="lazy" />
+            </figure>
+            <figure class="product__imgs--others">
+                <img src="../images/8.3.jpg" alt="Shirt" loading="lazy" />
+            </figure>
+            <figure class="product__imgs--others">
+                <img src="../images/8.4.jpg" alt="Shirt" loading="lazy" />
+            </figure>
+        </div>
+    </section>
+
+    <section class="product__details">
+        <h2 class="product__details--name">Men's Shirt</h2>
+        <div class="product__details--rating">
+            <div>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            </div>
+
+            <h6>35 Ratings</h6>
+        </div>
+
+        <p class="product__details--desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+            quidem provident eveniet laboriosam, non, repellendus ut rerum tempora
+            veritatis fugit quibusdam voluptates ullam tenetur autem?
+        </p>
+
+        <div>
+            <div class="product__details--quantity">
+                <h5>Quantity</h5>
+                <p>
+                    <span>-</span>
+                    <span>1</span>
+                    <span>+</span>
+                </p>
+            </div>
+
+            <div class="product__details--price">
+                <h3>$29.00</h3>
+                <p>12% VAT Added</p>
+            </div>
+        </div>
+
+        <a href="#" class="product__details--cart">Add to cart</a>
+
+        <div class="product__details--container">
+            <h4 class="product__details--container__title">Product Details</h4>
+
+            <div class="product__details--container__size">
+                <h5>Size</h5>
+                <h5>Small, Medium, Large</h5>
+            </div>
+
+            <div class="product__details--container__color">
+                <h5>Color</h5>
+                <h5>White, Blue, Pink</h5>
+            </div>
+
+            <div class="product__details--container__brand">
+                <h5>Brand</h5>
+                <h5>EL Merch</h5>
+            </div>
+        </div>
+
+        <div class="product__details--size">
+            <h4 class="product__details--size__title">Select Size</h4>
+
+            <ul>
+                <li>Small</li>
+                <li>Medium</li>
+                <li>Large</li>
+            </ul>
+        </div>
+
+        <div class="product__details--color">
+            <h4 class="product__details--color__title">Select Color</h4>
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+</main>
 </body>
 </html>
