@@ -5,11 +5,101 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="../general-styles.css">
     <link rel="stylesheet" href="styles.css">
     <title>Navbar</title>
 </head>
 <body>
+<header class="header">
+    <div class="header__meta">
+        <form action="" class="header__meta--form">
+            <fieldset>
+                <label>Language</label>
+                <select name="language">
+                    <option>English</option>
+                </select>
+            </fieldset>
 
+            <fieldset>
+                <label>Currency</label>
+                <select name="currency">
+                    <option>USD</option>
+                    <option>Euro</option>
+                </select>
+            </fieldset>
+        </form>
+
+        <ul class="header__meta--links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+    </div>
+
+    <div class="header__categories">
+        <div>
+            <a href="#">EL</a>
+
+            <form action="" class="header__categories--form">
+
+                <select name="categories">
+                    <option value="">categories</option>
+                </select>
+
+                <input type="text" placeholder="I am shpping for...">
+
+                <input type="submit" value="Search">
+
+            </form>
+
+        </div>
+
+        <div class="">
+            <div class="header__categories--favourites">
+                <div class="">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>3</span>
+                </div>
+
+                <div class="">
+                    <a href="#">Favourites</a>
+                    <a href="#">My Wishlist</a>
+                </div>
+            </div>
+
+            <div class="header__categories--login">
+                <div class="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>1</span>
+                </div>
+
+                <div class="">
+                    <a href="#">Login</a>
+                    <a href="#">My Accounts</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="header__nav">
+        <ul class="header__nav--links">
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">More items</a></li>
+        </ul>
+
+        <p class="header__nav--help">
+            <i class="fa-solid fa-square-phone"></i>
+            Need help? 123 456 789 8912
+        </p>
+    </nav>
+
+</header>
 </body>
 </html>
