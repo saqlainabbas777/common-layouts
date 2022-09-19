@@ -1,0 +1,130 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    padding: 4rem;
+}
+
+.order__summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__content {
+    background-color: rgb(225, 235, 238);
+    padding: 4rem;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.order__content > div:first-of-type {
+    display: flex;
+    gap: 8rem;
+}
+
+.order__content--confirmation__title,
+.order__content--receiver-details__title {
+    margin-bottom: 1rem;
+}
+
+.order__content--receiver-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.order__content--confirmation__desc span {
+    display: block;
+}
+
+.order__content--product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.order__content--product__info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.order__content--product__info--img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.order__content--product__info--img img {
+    border-radius: 50%;
+}
+
+.order__content--product__info > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.order__content--product__info > div > div {
+    display: flex;
+    gap: 1rem;
+}
+
+.order__content--product__price {
+    flex-basis: 15%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__payment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__payment > div:first-of-type {
+    flex-basis: 50%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__payment--shipment,
+.order__payment--method {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.order__payment--method__desc span {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.order__payment--cost {
+    flex-basis: 20%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.order__payment--cost > p {
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: bold;
+}
+
+.order__payment--cost__link {
+    background-color: slategray;
+    text-align: center;
+    color: white;
+}

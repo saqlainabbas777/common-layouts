@@ -13,5 +13,92 @@
     <title>Order Summary</title>
 </head>
 <body>
+<section class="order">
+    <div class="order__summary">
+        <h2 class="order__summary--title">Order Summary
+        </h2>
+        <h4 class="order__summary--number">Order #: 154323</h4>
+    </div>
+
+    <div class="order__content">
+        <div class="">
+            <div class="order__content--confirmation">
+                <h4 class="order__content--confirmation__title">Note:</h4>
+                <p class="order__content--confirmation__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, vel</p>
+            </div>
+
+            <div class="order__content--receiver-details">
+                <h4 class="order__content--receiver-details__title">Receiver Details</h4>
+                <p class="order__content--receiver-details__name">Name: John Smith</p>
+                <p class="order__content--receiver-details__email">Email: john@gmail.com</p>
+                <p class="order__content--receiver-details__address">Address: 177A Bleecker Street, NYC</p>
+            </div>
+        </div>
+
+        <div class="order__content--product">
+            <div class="order__content--product__info">
+                <figure class="order__content--product__info--img">
+                    <img src="../images/7.jpg" alt="Jacket" />
+                </figure>
+
+                <div>
+                    <h5 class="order__content--product__info--name">
+                        Women's Jacket
+                    </h5>
+
+                    <div>
+                        <h6 class="order__content--product__info--color">Black</h6>
+                        <h6 class="order__content--product__info--size">Medium</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order__content--product__price">
+                <h5>Quantity: 01</h5>
+                <h5>$120.00</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="order__payment">
+        <div>
+            <div class="order__payment--shipment">
+                <h3 class="order__payment--shipment__title">Shipping Method</h3>
+
+                <p class="order__payment--shipment__desc">
+                    Shipment takes up to 3 business days
+                </p>
+            </div>
+
+            <div class="order__payment--method">
+                <h3 class="order__payment--method__title">Payment Method</h3>
+
+                <p class="order__payment--method__desc">
+                    <span>Debit MasterCard</span>
+                    <span>**** **** **** **32</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="order__payment--cost">
+            <p class="order__payment--cost__subtotal">
+                <span>Subtotal</span>
+                <span>$120.00</span>
+            </p>
+
+            <p class="order__payment--cost__shipment">
+                <span>Shipping Cost (+)</span>
+                <span>$10.00</span>
+            </p>
+
+            <p class="order__payment--cost__total">
+                <span>Total Payable</span>
+                <span>$130.00</span>
+            </p>
+
+            <a href="#" class="order__payment--cost__link">Continue Shopping</a>
+        </div>
+    </div>
+</section>
 </body>
 </html>
