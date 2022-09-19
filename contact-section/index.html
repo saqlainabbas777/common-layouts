@@ -13,5 +13,49 @@
     <title>Contact Section</title>
 </head>
 <body>
+<main class="contact">
+    <section class="contact__title">
+        <h6 class="contact__title--mini">Contact Us</h6>
+        <h2 class="contact__title--main">Let's talk about your problem</h2>
+    </section>
+
+    <section class="contact__location">
+        <i class="contact__location--icon fa-solid fa-location-dot"></i>
+        <h5 class="contact__location--title">Our Location</h5>
+        <p class="contact__location--address">177A Bleecker Street, NYC</p>
+    </section>
+
+    <section class="contact__email">
+        <i class="contact__email--icon fa-regular fa-envelope"></i>
+        <h5 class="contact__email--title">How can we help?</h5>
+        <p class="contact__email--address">contact@el.cool</p>
+    </section>
+
+    <form class="contact__form">
+        <h3 class="contact__form--title">Send us Message</h3>
+
+        <fieldset class="contact__form--name">
+            <label for="name">Full Name*</label>
+            <input type="text" />
+        </fieldset>
+
+        <fieldset class="contact__form--email">
+            <label for="email">Email*</label>
+            <input type="email" />
+        </fieldset>
+
+        <fieldset class="contact__form--phone">
+            <label for="phone">Phone*</label>
+            <input type="text" />
+        </fieldset>
+
+        <fieldset class="contact__form--message">
+            <label for="message">Message*</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Send Message" />
+    </form>
+</main>
 </body>
 </html>
