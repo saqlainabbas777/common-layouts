@@ -1,0 +1,82 @@
+.team {
+    display: grid;
+    grid-gap: 6rem;
+
+    padding: 4rem;
+    background-color: rgb(242, 246, 247);
+}
+
+.team__content {
+    justify-self: center;
+
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    gap: 1rem;
+
+    text-align: center;
+}
+
+.team__content--desc span {
+    display: block;
+}
+
+.team__members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team__members--member {
+    display: grid;
+    grid-template-rows: 15rem 5rem auto;
+    justify-items: center;
+    gap: 2rem;
+
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.team__members--member:first-child .team__members--member__img img,
+.team__members--member:last-child .team__members--member__img img {
+    object-position: center 20%;
+}
+
+.team__members--member:nth-child(2) .team__members--member__img img,
+.team__members--member:nth-child(3) .team__members--member__img img {
+    object-position: 20% center;
+}
+
+
+.team__members--member__img {
+    height: 15rem;
+    width: 15rem;
+}
+
+.team__members--member__img img {
+    border-radius: 50%;
+}
+
+.team__members--member__name,
+.team__members--member__role {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.team__members--member__role {
+    align-self: end;
+    color: rgb(130 129 129);
+}
+
+.team__members--member__social {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.team__members--member__social i {
+    padding: 1rem;
+    background-color: rgb(242, 246, 247);
+    border-radius: 50%;
+}
