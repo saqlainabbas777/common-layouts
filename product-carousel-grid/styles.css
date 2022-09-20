@@ -1,0 +1,119 @@
+.carousel {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    gap: 6rem;
+
+    padding: 4rem;
+}
+
+.carousel__content {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    gap: 1rem;
+
+    justify-self: center;
+    text-align: center;
+}
+
+.carousel__content--mini-title {
+    color: blue;
+}
+
+.carousel__content--title {
+    font-size: 4rem;
+}
+
+.carousel__content--desc span {
+    display: block;
+}
+
+.carousel__products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.carousel__products--product {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, min-content);
+    gap: .5rem;
+
+    position: relative;
+}
+
+.carousel__products--product__img {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+
+    height: 40rem;
+}
+
+.carousel__products--product__img img {
+    border-radius: 0.5rem;
+}
+
+.carousel__products--product__name {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.carousel__products--product__price {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+.carousel__products--product__price span {
+    display: inline-block;
+    margin-left: 1rem;
+    text-decoration: 1px line-through wavy;
+    color: lightgray;
+}
+
+.carousel__products--product__rating-star {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+
+    color: orange;
+}
+
+.carousel__products--product__rating-number {
+    grid-column: 3 / -1;
+    grid-row: 5 / 6;
+}
+
+.carousel__products--product__badge {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.carousel__products--product__badge.discount {
+    background-color: rgb(21, 71, 158);
+}
+
+.carousel__products--product__badge.hot {
+    background-color: rgb(158, 21, 51);
+}
+
+.carousel__products--product__badge.new {
+    background-color: rgb(21, 158, 67);
+}
+
+.carousel__nav {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    justify-content: center;
+}
+
+.carousel__nav .fa-chevron-left,
+.carousel__nav .fa-chevron-right {
+    padding: 1rem;
+    border: 1px solid orange;
+    color: orange;
+    cursor: pointer;
+}
