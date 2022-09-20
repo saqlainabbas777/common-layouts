@@ -13,5 +13,95 @@
     <title>Shopping cart</title>
 </head>
 <body>
+<main class="cart">
+    <h2 class="cart__title">Shopping cart</h2>
+
+    <section class="cart__products">
+        <div class="cart__products--product">
+            <figure class="cart__products--product__img">
+                <img src="../images-grid/7.1.jpg" alt="Skirt" loading="lazy">
+            </figure>
+
+            <div class="cart__products--product__details">
+                <h3 class="cart__products--product__details--name">
+                    Exquisite Skirt
+                </h3>
+                <h6 class="cart__products--product__details--color">Brown</h6>
+                <h6 class="cart__products--product__details--size">Size: S</h6>
+                <h6 class="cart__products--product__details--availability">
+                    In Stock
+                </h6>
+
+                <a href="#" class="cart__products--product__details--editing">Edit</a>
+                <a href="#" class="cart__products--product__details--remove">Remove</a>
+            </div>
+
+            <p class="cart__products--product__price">Each <span>$39.00</span></p>
+
+            <div class="cart__products--product__quantity">
+                <p>Quantity</p>
+                <input type="number" placeholder="1" />
+            </div>
+        </div>
+
+        <div class="cart__products--product">
+            <figure class="cart__products--product__img">
+                <img src="../images-grid/7.2.jpg" alt="Sneakers" />
+            </figure>
+
+            <div class="cart__products--product__details">
+                <h3 class="cart__products--product__details--name">
+                    Eloquent Sneakers
+                </h3>
+                <h6 class="cart__products--product__details--color">Purple</h6>
+                <h6 class="cart__products--product__details--size">Size: M</h6>
+                <h6 class="cart__products--product__details--availability">
+                    In Stock
+                </h6>
+
+                <a href="#" class="cart__products--product__details--editing"
+                >Edit</a
+                >
+                <a href="#" class="cart__products--product__details--remove"
+                >Remove</a
+                >
+            </div>
+
+            <p class="cart__products--product__price">Each <span>$39.00</span></p>
+
+            <div class="cart__products--product__quantity">
+                <p>Quantity</p>
+                <input type="number" placeholder="1" />
+            </div>
+        </div>
+    </section>
+
+    <aside class="cart__checkout">
+        <div>
+            <h3 class="cart__checkout--title">Apply coupon to get discount</h3>
+
+            <fieldset class="cart__checkout--coupon">
+                <input type="text" placeholder="Coupon Code" />
+                <input type="submit" value="Submit" />
+            </fieldset>
+        </div>
+
+        <div>
+            <p class="cart__checkout--subtotal">Subtotal <span>$138.00</span></p>
+            <p class="cart__checkout--shipping-cost">
+                Shipping Cost <span>$13.50</span>
+            </p>
+            <p class="cart__checkout--discount">Discount <span>$0.00</span></p>
+        </div>
+
+        <div>
+            <p class="cart__checkout--total">Total <span>$151.50</span></p>
+            <input type="submit" value="Checkout" />
+            <p class="cart__checkout--bonus">
+                You're <span>$10.50</span> away from free shipping
+            </p>
+        </div>
+    </aside>
+</main>
 </body>
 </html>
