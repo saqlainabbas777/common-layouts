@@ -1,0 +1,98 @@
+.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+
+    padding: 4rem;
+    height: 100vh;
+}
+
+.header__showcase {
+    background-image: linear-gradient(
+            to right,
+            rgba(96 48 48 / 0.5),
+            rgba(96 48 48 / 0.1)
+    ), url("../images-grid/5.1.jpg");
+    background-size: cover;
+    padding: 4rem;
+
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    align-content: center;
+    gap: 2rem;
+
+    position: relative;
+}
+
+.header__showcase--mini-title {
+    color: white;
+}
+
+.header__showcase--title {
+    font-size: 8rem;
+    color: white;
+    line-height: 1.1;
+    text-decoration: underline;
+}
+
+.header__showcase--title span {
+    display: block;
+}
+
+.header__showcase--shop {
+    background-color: rgb(96, 48, 48);
+    color: white;
+
+    justify-self: start;
+}
+
+.header__showcase--navigation {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1rem);
+    gap: 2rem;
+}
+
+.header__showcase--navigation div {
+    height: 1rem;
+    width: 1rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.header__showcase--navigation div.active {
+    transform: scale(1.75);
+}
+
+.header__aside {
+    background-image: url("../images-grid/5.2.jpg");
+    background-size: cover;
+    background-position: right center;
+    padding: 4rem;
+
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    align-content: center;
+    justify-content: end;
+    gap: 1rem;
+
+    color: white;
+}
+
+
+.header__aside-mini-title,
+.header__aside--title {
+    color: white;
+}
+
+.header__aside--title span {
+    display: block;
+}
+
+.header__aside--title {
+    line-height: 1;
+}
